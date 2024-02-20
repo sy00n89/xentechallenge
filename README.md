@@ -8,7 +8,11 @@ This repository contains code for predicting individuals’ loan default based o
 Xente is a Ugandan e-commerce and financial service application that allows its users to make payments, get loans, and shop online. With given datasets including a sample of unique e-commerce transactions, the goal of this project is to predict loan default based on ecommerce transactions data. The dataset includes information on ecommerce transactions and associated loans, including whether or not a customer defaulted on their loan: 
 
 Train.csv: E-commerce transactions and associated loans used to train the model.
+
+
 Test.csv: E-commerce transactions and associated loans excluding customer loan default status, excluding additional loan-associated variables used to test the model.
+
+
 unlinked_masked_final.csv: E-commerce transactions not linked to any other loans but associated with customers that have loan-linked e-commerce transactions. 
 
 ***
@@ -29,6 +33,8 @@ pip install google-colab pandas numpy scikit-learn matplotlib
 Help
 ```
 Ensure following datasets are downloaded in your accessible location in order to successfully run the code. 
+
+
 The code provided in this respiratory uses Google Drive to store csv files. 
 - Train.csv
 - Test.csv
