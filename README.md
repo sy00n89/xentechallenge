@@ -28,6 +28,12 @@ bash
 pip install google-colab pandas numpy scikit-learn matplotlib
 Help
 ```
+Ensure following datasets are downloaded in your accessible location in order to successfully run the code. 
+The code provided in this respiratory uses Google Drive to store csv files. 
+- Train.csv
+- Test.csv
+- unlinked_masked_final.csv
+
 If you encounter any issues or have questions about using this codebase for Ecommerce Loan Default Prediction, consider the following:
 
 ## Common Issues
