@@ -34,13 +34,47 @@ Help
 ```
 Ensure following datasets are downloaded in your accessible location in order to successfully run the code. 
 
-
 The code provided in this respiratory uses Google Drive to store csv files. 
 - Train.csv
 - Test.csv
 - unlinked_masked_final.csv
 
-If you encounter any issues or have questions about using this codebase for Ecommerce Loan Default Prediction, consider the following:
+## Troubleshooting
+
+### Issue: Finding Matching Keys between Train.csv and unlinked_masked_final.csv
+
+#### Problem Description:
+
+During the data preprocessing phase, one of the challenges encountered was establishing a connection between the `Train.csv` and `unlinked_masked_final.csv` datasets. Unlike typical datasets with explicit linking columns, these datasets did not have direct indicators of a common key.
+
+#### Solution:
+
+To address this challenge, assumptions and custom columns were introduced to establish potential connections between the two datasets. Here's a brief overview of the approach:
+
+1. **Customer Identification:**
+   - Leveraged assumptions based on customer information to identify potential connections.
+   - Created custom columns to link customers across the datasets.
+
+2. **Transaction-Level Matching:**
+   - Explored transaction-level details to establish associations between transactions in `Train.csv` and `unlinked_masked_final.csv`.
+   - Assumed certain patterns or characteristics that might indicate a connection.
+
+#### Recommendations:
+
+1. **Review Custom Columns:**
+   - Examine the custom columns introduced during data preprocessing for potential connections.
+   - Ensure these assumptions align with the characteristics of the datasets.
+
+2. **Explore Additional Features:**
+   - Consider exploring additional features or creating new custom columns if the initial assumptions do not yield satisfactory connections.
+   - Iterate on the data preprocessing steps based on insights gained from the datasets.
+
+3. **Collaborate and Seek Feedback:**
+   - Collaborate with team members or seek feedback from domain experts to refine the assumptions.
+   - Utilize discussions or forums to share experiences and learn from the community.
+
+Data preprocessing challenges often involve a degree of creativity and domain knowledge. Feel free to adapt the approach based on the specifics of your datasets and project requirements.
+
 
 ## Common Issues
 
@@ -52,7 +86,13 @@ pip install google-colab pandas numpy scikit-learn matplotlib
 ```
 
 ## Authors
-names and contact info
+[Gwonwoo (Justin) Cha] 
+
+
+[SungChun Lee] 
+
+
+[Siwoo (Reese) Yoon] (https://github.com/sy00n89)
 
 ## Version History
 ### Version 1.0.0 (2024-02-16)
